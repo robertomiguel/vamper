@@ -1,11 +1,11 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { Thing } from '../src'
-import { Props } from '../src/components/Thing'
+import { Text } from '../src'
+import { Props } from '../src/components/Text'
 
 const meta: Meta = {
-  title: 'Welcome',
-  component: Thing,
+  title: 'Text',
+  component: Text,
   argTypes: {
     children: {
       control: {
@@ -25,7 +25,7 @@ const meta: Meta = {
 
 export default meta
 
-const Template: Story<Props> = args => <Thing {...args} />
+const Template: Story<Props> = args => <Text {...args} />
 
 // Al pasar usando el formato Args para historias exportadas, puede controlar los accesorios de un componente para su reutilización en una prueba
 // https://storybook.js.org/docs/react/workflows/unit-testing
